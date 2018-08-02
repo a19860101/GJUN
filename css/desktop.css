@@ -1,0 +1,125 @@
+:root {
+    /* --primaryColor: #ff6060; */
+    --primaryColor: #ff6060;
+}
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    width: 100%;
+    /* vertical-align: top; */
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--primaryColor);
+    color: #fff;
+    text-decoration: none;
+}
+/* GLOBAL */
+/* GRID FOR DESKTOP */
+.full-width {
+    width: 100%;
+}
+.fixed-width {
+    width: 1060px;
+    margin: auto;
+}
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+.col-9{
+    width: calc(100% / 12 * 9);
+}
+.col-8{
+    width: calc(100% / 12 * 8);
+}
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+.col-5{
+    width: calc(100% / 12 * 5);
+}
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+[class*="col"] {
+    float: left;
+    padding: 10px;
+}
+
+.nopa {
+    padding: 0!important;
+    color: var(--primaryColor);
+}
+
+/* nav-info */
+#nav-info {
+    /* height: 50px; */
+    /* line-height: 50px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: #ccc;
+}
+#nav-info a {
+    display: block;
+    padding: 8px 15px;
+}
+#nav-info .addr {
+    float: left;
+    padding: 8px 15px;
+
+    background-color: #fa0;
+}
+#nav-info .register {
+    float: right;
+
+    background-color: #fa0;
+}
+#nav-info .register li {
+    float: left;
+}
+#nav-info .donate {
+    float: right;
+
+    background-color: #fa0;
+}
