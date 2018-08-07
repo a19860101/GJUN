@@ -5,7 +5,7 @@
 /* GLOBAL */
 * {
     box-sizing: border-box;
-    font-family: "微軟正黑體";
+    font-family: "Lato", "微軟正黑體";
 }
 
 .clearfix::after {
@@ -35,6 +35,10 @@ a {
     background-color: var(--primaryColor);
     color: #fff;
     text-decoration: none;
+}
+p {
+    font-size: 14px;
+    color: #333;
 }
 /* GLOBAL */
 /* GRID FOR DESKTOP */
@@ -90,15 +94,13 @@ a {
     padding: 0!important;
     color: var(--primaryColor);
 }
-
 /* nav-info */
 #nav-info {
-    /* height: 50px; */
-    /* line-height: 50px; */
     padding-top: 20px;
     padding-bottom: 20px;
-
-    background-color: #ccc;
+    /* position: fixed; */
+    position: absolute;
+    background-color: rgba(255,255,255,.7)
 }
 #nav-info a {
     display: block;
@@ -107,19 +109,64 @@ a {
 #nav-info .addr {
     float: left;
     padding: 8px 15px;
-
-    background-color: #fa0;
 }
 #nav-info .register {
     float: right;
-
-    background-color: #fa0;
 }
 #nav-info .register li {
     float: left;
 }
 #nav-info .donate {
     float: right;
-
-    background-color: #fa0;
 }
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* position: fixed; */
+    position: absolute;
+    top: 78px;
+    background-color: rgba(255,255,255,.7)
+}
+nav .logo {
+    float: left;
+}
+nav .menu {
+    float: right;
+}
+nav .menu li {
+    float: left;
+}
+nav a {
+    display: block;
+    padding: 8px 15px;
+}
+/* header */
+header {
+    height: 800px;
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* feature */
+#feature h2 {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#feature h3 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#feature p {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+#feature .col-5 {
+    padding: 100px;
+}
+
