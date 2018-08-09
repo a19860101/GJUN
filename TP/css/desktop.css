@@ -23,7 +23,7 @@ li {
 }
 img {
     width: 100%;
-    /* vertical-align: top; */
+    vertical-align: top;
 }
 a {
     text-decoration: none;
@@ -36,9 +36,17 @@ a {
     color: #fff;
     text-decoration: none;
 }
+h2 {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 p {
     font-size: 14px;
     color: #333;
+    line-height: 1.5em;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 /* GLOBAL */
 /* GRID FOR DESKTOP */
@@ -150,11 +158,15 @@ header {
 }
 
 /* feature */
-#feature h2 {
+#feature {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* #feature h2, #gallery h2 {
     font-size: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
-}
+} */
 #feature h3 {
     font-size: 30px;
     font-weight: 300;
@@ -164,9 +176,55 @@ header {
 }
 #feature p {
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 30px; 
 }
 #feature .col-5 {
     padding: 100px;
 }
+.line,.line--light {
+    position: relative;
+}
+.line::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 3px solid var(--primaryColor);
+    width: 60px;
+    top: 22px;
+    left: 22px;
+}
+.line--light::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 3px solid #fff;
+    width: 60px;
+    top: 22px;
+    left: 22px;
+}
 
+/*Events*/
+#events {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: 
+    linear-gradient(rgb(255, 96, 96,.6),rgb(255, 96, 96,.6)),
+    url(https://source.unsplash.com/random/1200x300);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    color: #fff;
+}
+
+#events p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+/*gallery*/
+#gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
