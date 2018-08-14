@@ -184,6 +184,9 @@ header {
 .line,.line--light {
     position: relative;
 }
+.line--light {
+    color: #fff;
+}
 .line::before {
     content: "";
     display: block;
@@ -191,7 +194,7 @@ header {
     border-top: 3px solid var(--primaryColor);
     width: 60px;
     top: 22px;
-    left: 22px;
+    left: 0px;
 }
 .line--light::before {
     content: "";
@@ -200,7 +203,7 @@ header {
     border-top: 3px solid #fff;
     width: 60px;
     top: 22px;
-    left: 22px;
+    left: 0px;
 }
 
 /*Events*/
@@ -228,3 +231,44 @@ header {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+/*upcoming*/
+#upcoming {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: 
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url(https://source.unsplash.com/random/1200x400);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#upcoming .date{
+    background-color: var(--primaryColor);
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    display: table;
+}
+#upcoming .day {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+#upcoming .content {
+    border: 2px solid rgba(255,255,255,.7);
+    height: 80px;
+    display: table;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+}
+#upcoming .title , #upcoming .time, #upcoming .addr{
+    display: table-cell;
+    vertical-align: middle;
+    width: calc(100% / 3);
+
+}
+
+
+
