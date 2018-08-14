@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
     font-family: "Lato", "微軟正黑體";
+    font-weight: 300;
 }
 
 .clearfix::after {
@@ -269,6 +270,40 @@ header {
     width: calc(100% / 3);
 
 }
+/* blog */
+#blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#blog .pic {
+    position: relative;
+    /* height: 300px; */
+    /* width: 100%; */
+    margin-bottom: 20px;
+}
+#blog .pic .date {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primaryColor);
+    bottom: 0;
 
+    display: table;
+    text-align: center;
+
+}
+#blog .pic .date .day {
+    display: table-cell;
+    vertical-align: middle;
+}
+#blog h3 {
+    
+    margin-bottom: 20px;
+
+}
+#blog p {
+
+    margin-bottom: 20px;
+}
 
 
